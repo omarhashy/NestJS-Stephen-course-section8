@@ -13,7 +13,6 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
   providers: [
     UsersService,
     AuthService,
-    CurrentUserInterceptor,
     {
       provide: APP_INTERCEPTOR,
       useClass: CurrentUserInterceptor,
